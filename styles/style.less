@@ -1,0 +1,17 @@
+h1{;color: #ccc;padding: 10px;text-align: right;}
+body{background: url(../images/shattered-island.gif) 50%;}
+
+.b-header{
+
+	//&{background: url(../images/dark-wood.jpg) 50%;color:#e6e6e6}
+}
+.b-header-navigation{
+	&{position: absolute;padding-top: 50px;top:0px;height: 100vh;}
+	&__element{text-align: left;color: #ddd;padding: 0px;background-position: -100% 0%;transition:.3s;display: block;border: 3px solid white;height: 0px;overflow: hidden;margin-bottom: 20px}
+	&__element--general{transition:.3s; }
+	&__element--general &__link{display: block}
+	&__link,&__link:hover,&__link:active,&__link:focus{color: #ccc;width: 100%;;;display: block}
+	&__element:hover{background-color: rgba(0,0,0,0.3)}
+	&:hover &__element{height: auto;padding: 10px;border: 3px solid rgba(0,0,0,0)}
+	&:hover{background-color: rgba(0,0,0,.3);}
+}
