@@ -1,8 +1,11 @@
 h1{;color: #ccc;padding: 10px;text-align: right;}
-body{background: url(../images/shattered-island.gif) 50%;}
+body{background: url(../images/chalkboard.jpg) 50%;font-family: 'Roboto', sans-serif;}
 
 .b-header{
-
+	&__pix{width:100%;height:20vw;;min-height: 200px;background:url(../images/myself.png) no-repeat 50%;background-size: cover;transition:.3s}
+	&__pix--hide{min-height: 0px;height:5vh;}
+	&__title{cursor: pointer}
+	&__title--active span{color:#fff}
 	//&{background: url(../images/dark-wood.jpg) 50%;color:#e6e6e6}
 }
 .b-header-navigation{
@@ -14,4 +17,52 @@ body{background: url(../images/shattered-island.gif) 50%;}
 	&__element:hover{background-color: rgba(0,0,0,0.3)}
 	&:hover &__element{height: auto;padding: 10px;border: 3px solid rgba(0,0,0,0)}
 	&:hover{background-color: rgba(0,0,0,.3);}
+}
+.b-navigation{
+	&{margin-top: 25px;}
+	&__element{margin-bottom: 25px;position:relative;}
+	&__element:before{width:0px;content:'';height:100%;position:absolute; top:0px;left:0px;background-color: rgba(0,0,0,.0);display:block;transition:width .3s,background-color .4s ease;pointer-events: none}
+	&__element:hover:before{width:100%;background-color: rgba(0,0,0,.5)}
+	&__link{width:100%;text-align: center;height: 50px;color:#ccc;background-color:transparent;line-height: 50px;font-size: 20px;display:inline-block; transition:color .2s;position:relative;z-index: 9}
+	&__link:hover,&__link:focus,&__link:active{text-decoration: none;color:#fff}
+}
+.b-content{
+	&{padding:15px }
+	&__title{color:white;padding: 0 15px;};
+	p{color:white}
+	
+}
+.b-resume{
+	&{margin-top: 20px}
+}
+.b-resume-education{
+	&{margin-bottom: 40px}
+	&__line{display:block;padding-bottom: 10px;color:white}
+	&__name{font-size: 18px;}
+	&__age{font-size: 14px;padding-bottom: 15px}
+	&__vers{font-size: 16px;padding-bottom: 0px;}
+	&__course{padding-bottom: 0px}
+}
+.b-experience-time{
+	&__duration{font-size: 62px;line-height: 60px;color:white;display:inline-block;margin-right: 5px}
+	&{color:white;font-size: 14px;padding:0 15px;margin-bottom: 40px}
+	&__normal{display:block;margin-top: 20px;font-size: 18px;}
+}
+.b-experience-portfolio{
+	&__title{margin-bottom: 10px}
+	&{color:white;font-size: 14px;padding:0 15px;margin-bottom: 40px}
+	&__link{color:white;text-decoration: none}
+	&__link:hover,&__link:focus,&__link:active{color:#ccc;text-decoration: none}
+	&__name{font-size: 16px}
+	&__work{display:inline-block;color:#ccc;margin-left: 10px;font-size: 12px}
+	&__item{margin-bottom: 10px}
+}
+.b-tech{
+	
+	&{color:#ccc;}
+	&__title{color:#fff;padding: 0 15px;margin-bottom: 20px}
+	&__icon{width:50px;height:50px;display:flex;justify-content:center;align-items:center;margin-right: 5px;filter:grayscale(50%)}
+	&__pix{max-width: 100%;max-height: 100%}
+	&__element{display:flex;align-items:center;margin-bottom: 10px}
+	&__item{margin-bottom: 30px}
 }
