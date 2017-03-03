@@ -35,7 +35,7 @@ var Exp = React.createClass({
     return (
         <div className="b-content">
       <h2 className="b-content__title">Опыт</h2>
-      <p className="b-experience row">
+      <div className="b-experience row">
         <div className="b-experience-time col-lg-6 col-md-6 col-sm-12 col-xs-12"><span className="b-experience-time__duration" ref='duration'>{this.state.curentData}</span><span>Дня в вэб-разработке</span><span className="b-experience-time__normal">
             <div className="glyphicon glyphicon-send"> </div><span> Полет нормальный</span></span></div>
         <div className="b-experience-portfolio col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -47,7 +47,7 @@ var Exp = React.createClass({
           <div className="b-experience-portfolio__item"><a href="http://tyumeco.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Пивоварня ТюмЭкоБир</span></a><span className="b-experience-portfolio__work">Фул-стэк</span></div>
         </div>
-      </p>
+      </div>
     </div>
     );
   }
