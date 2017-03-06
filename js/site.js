@@ -42,11 +42,15 @@ var Exp = React.createClass({
           <h3 className="b-experience-portfolio__title">Последние работы :</h3>
           <div className="b-experience-portfolio__item"><a href="http://ermolaev-beer.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Пивоварня Ермолаев</span></a><span className="b-experience-portfolio__work">Фул-стэк</span></div>
-          <div className="b-experience-portfolio__item"><a href="http://atmyplace.ru/" rel="nofollow noopener" target="_blank" disable="disable" className="b-experience-portfolio__link">
+         { /*<div className="b-experience-portfolio__item"><a href="http://atmyplace.ru/" rel="nofollow noopener" target="_blank" disable="disable" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магази ЭтМайПлэйс</span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
-          <div className="b-experience-portfolio__item"><a href="http://tyumeco.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+          */}<div className="b-experience-portfolio__item"><a href="http://tyumeco.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Пивоварня ТюмЭкоБир</span></a><span className="b-experience-portfolio__work">Фул-стэк</span></div>
-        </div>
+            <div className="b-experience-portfolio__item"><a href="https://www.echo-company.ru/portfolio/mattress-virtuoz.htm" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магазин Mattress virtuoz</span></a><span className="b-experience-portfolio__work">Фронт-энд + Демо</span></div>
+                   <div className="b-experience-portfolio__item"><a href="http://t4l.ru/" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магазин Технологии для жизни </span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
+        </div>l
       </div>
     </div>
     );
@@ -139,7 +143,7 @@ var Contact= React.createClass({
        <div className="b-content">
       <h2 className="b-content__title">Контакты </h2>
     <div className="b-contact">
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      { /*div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <form className = {this.state.sendMail ?  'b-contact-form b-contact-form--send ':'b-contact-form '}>
             <textarea placeholder="Можете что ни будь мне написать" onChange={this.onChangeMail}  ref="textarea" className="b-contact-form__input"></textarea>
             <button onClick={this.onSubmitMail} className={ 'b-contact-form__button '  +  this.state.submitMail }>Отправить письмо</button>
@@ -147,7 +151,7 @@ var Contact= React.createClass({
           <div className={this.state.sendMail ? 'b-contact-form__done  b-contact-form__enable':'b-contact-form__done '}>
             <h3 className="b-contact-form__title">Я это прочитаю. И отвечу, если вы не забыли оставить контактные данные</h3>
           </div>
-        </div>
+        </div>*/}
         <div className="b-contact-adres col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div className="b-experience-portfolio__item"><a href="https://vk.com/ommmmmmmmmmmm" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
               <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Вконтакте</span></a></div>
@@ -200,7 +204,7 @@ var App = React.createClass({
             <div className="b-header">
               <h1 className={'b-header__title' +( this.state.currentVal=='general' ? '':' b-header__title--active') } onClick={this.setGeneral}><span className="b-header__title hidden-sm hidden-xs">Домашняя страница Александра Добытина</span><span className="b-header__title hidden-lg hidden-md">Дом-страница Александра Добытина</span></h1>
              <div className={'b-header__pix  ' + (this.state.currentVal=='general' ? '':'b-header__pix--hide') }></div>
-              <div className="b-navigation row">
+              <div className="b-navigation">
               <div onClick={this.setEducation} className="b-navigation__element col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#education" className="b-navigation__link s-navigation__link">Резюме</a></div>
               <div onClick={this.setExp} className="b-navigation__element col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#exp" className="b-navigation__link s-navigation__link">Опыт</a></div>
               <div onClick={this.setTech} className="b-navigation__element col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#tech" className="b-navigation__link s-navigation__link">Технологии</a></div>
