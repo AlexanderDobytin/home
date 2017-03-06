@@ -120,9 +120,44 @@ var Tech = React.createClass({
   }
 });
 var Contact= React.createClass({
+  getInitialState:function(){
+    return{
+    sendMail:'',
+    submitMail:''
+  }
+  },
+  onChangeMail:function(){
+    var text = ReactDOM.findDOMNode(this.refs.textarea).value;
+    text.length > 3 ? this.setState({submitMail:'b-contact-form__enable'}) :''
+  },
+  onSubmitMail:function(e){
+    e.preventDefault();
+    this.setState({sendMail:true})
+  },
   render: function() {
     return (
-     <div className="b-content"><h2> Контакты</h2></div>
+       <div className="b-content">
+      <h2 className="b-content__title">Контакты </h2>
+    <div className="b-contact">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <form className = {this.state.sendMail ?  'b-contact-form b-contact-form--send ':'b-contact-form '}>
+            <textarea placeholder="Можете что ни будь мне написать" onChange={this.onChangeMail}  ref="textarea" className="b-contact-form__input"></textarea>
+            <button onClick={this.onSubmitMail} className={ 'b-contact-form__button '  +  this.state.submitMail }>Отправить письмо</button>
+          </form>
+          <div className={this.state.sendMail ? 'b-contact-form__done  b-contact-form__enable':'b-contact-form__done '}>
+            <h3 className="b-contact-form__title">Я это прочитаю. И отвечу, если вы не забыли оставить контактные данные</h3>
+          </div>
+        </div>
+        <div className="b-contact-adres col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div className="b-experience-portfolio__item"><a href="https://vk.com/ommmmmmmmmmmm" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Вконтакте</span></a></div>
+          <div className="b-experience-portfolio__item"><a href="https://www.facebook.com/profile.php?id=100011023278862" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Фэйсбук</span></a></div>
+          <div className="b-experience-portfolio__item"><a href="mailto:sibsubtech@gmail.com" rel="nofollow noopener" target="_blank" className="b-experience-portfolio__link">
+              <div className="glyphicon glyphicon-envelope"></div><span className="b-experience-portfolio__name"> Sibsubtech@gmail.com</span></a></div>
+        </div>
+      </div>
+      </div>
     );
   }
 });
