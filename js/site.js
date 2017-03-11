@@ -228,14 +228,15 @@ ReactDOM.render(
 
 
 
-    (function (d, w, c) {
+       (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
                 w.yaCounter43375879 = new Ya.Metrika({
                     id:43375879,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true
+                    accurateTrackBounce:true,
+                    webvisor:true
                 });
             } catch(e) { }
         });
@@ -251,5 +252,4 @@ ReactDOM.render(
             d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
-
 
