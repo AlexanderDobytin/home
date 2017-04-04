@@ -228,7 +228,7 @@ ReactDOM.render(
 
 
 
-       (function (d, w, c) {
+      (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
                 w.yaCounter43375879 = new Ya.Metrika({
@@ -252,4 +252,3 @@ ReactDOM.render(
             d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
-
