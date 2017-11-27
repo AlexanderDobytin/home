@@ -35,7 +35,27 @@ var Exp = React.createClass({
       } < /span><span>Дня в вэб-разработке</span > < span className = "b-experience-time__normal" >
       < div className = "glyphicon glyphicon-send" > < /div><span> Полет нормальный</span > < /span></div >
       < div className = "b-experience-portfolio col-lg-6 col-md-6 col-sm-12 col-xs-12" >
-      < h3 className = "b-experience-portfolio__title" > Последние работы: < /h3> < div className = "b-experience-portfolio__item" > < a href = "https://aidsquiltonline.org/"
+      < h3 className = "b-experience-portfolio__title" > Последние работы: < /h3> 
+      
+      < div className = "b-experience-portfolio__item" > < a href = "http://ddo.tyuiu.ru/"
+      rel = "nofollow noopener"
+      target = "_blank"
+      className = "b-experience-portfolio__link" >
+      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Институт доп. образования ТИУ</span > < /a><span className="b-experience-portfolio__work">Фронт-энд</span > < /div> 
+
+      < div className = "b-experience-portfolio__item" > < a href = "http://aistmn.ru/"
+      rel = "nofollow noopener"
+      target = "_blank"
+      className = "b-experience-portfolio__link" >
+      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> «Агенство Интеллект-Сервис»</span > < /a><span className="b-experience-portfolio__work">Фронт-энд</span > < /div> 
+      < div className = "b-experience-portfolio__item" > < a href = "http://www.dom-video.ru/"
+      rel = "nofollow noopener"
+      target = "_blank"
+      className = "b-experience-portfolio__link" >
+      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> «Dom Video» Видеожурнал о недвижимости</span > < /a><span className="b-experience-portfolio__work">Фронт-энд</span > < /div> 
+      
+      
+      < div className = "b-experience-portfolio__item" > < a href = "https://aidsquiltonline.org/"
       rel = "nofollow noopener"
       target = "_blank"
       className = "b-experience-portfolio__link" >
@@ -43,21 +63,29 @@ var Exp = React.createClass({
       rel = "nofollow noopener"
       target = "_blank"
       className = "b-experience-portfolio__link" >
-      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Пивоварня Ермолаев</span > < /a><span className="b-experience-portfolio__work">Фул-стэк</span > < /div> {
+      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Пивоварня Ермолаев</span > < /a><span className="b-experience-portfolio__work">Фул-стэк</span > < /div> 
+      < div className = "b-experience-portfolio__item" > < a href = "http://www.zitadel.info/"
+      rel = "nofollow noopener"
+      target = "_blank"
+      className = "b-experience-portfolio__link" >
+      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Кадастровое агенство «Цитадель»</span > < /a><span className="b-experience-portfolio__work">Фул-стэк</span > < /div>
+      
+      
+      {
         /*<div className="b-experience-portfolio__item"><a href="http://atmyplace.ru/" rel="nofollow noopener" target="_blank" disable="disable" className="b-experience-portfolio__link">
                      <div className="glyphicon glyphicon-link"></div><span className="b-experience-portfolio__name"> Магази ЭтМайПлэйс</span></a><span className="b-experience-portfolio__work">Фронт-энд</span></div>
                  */
-      } < div className = "b-experience-portfolio__item" > < a href = "http://tyumeco.ru/"
+      }
+      
+      
+      
+       < div className = "b-experience-portfolio__item" > < a href = "http://tyumeco.ru/"
       rel = "nofollow noopener"
       target = "_blank"
       className = "b-experience-portfolio__link" >
       < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Пивоварня ТюмЭкоБир</span > < /a><span className="b-experience-portfolio__work">Фул-стэк</span > < /div>
-
-      < div className = "b-experience-portfolio__item" > < a href = "http://www.ultratex.ru/"
-      rel = "nofollow noopener"
-      target = "_blank"
-      className = "b-experience-portfolio__link" >
-      < div className = "glyphicon glyphicon-link" > < /div><span className="b-experience-portfolio__name"> Магазин швейной фурнитуры (IE8) </span > < /a><span className="b-experience-portfolio__work">Фронт-энд</span > < /div> < /div>l < /div> < /div>
+< /div> < /div> < /div>
+      
     );
   }
 });
@@ -85,14 +113,13 @@ var Tech = React.createClass({
       < div className = "b-tech__icon" > < img src = "images/bem.png"
       className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > BEM < /div> < /div> < div className = "b-tech__element col-lg-6 col-md-6 col-sm-4 col-xs-6" >
       < div className = "b-tech__icon" > < img src = "images/js.png"
-      className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > ES5 < /div> < /div> < /div> < div className = "b-tech__item col-lg-3 col-md-3 col-sm-12 col-xs-12" >
+      className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > ES6 < /div> < /div> < /div> < div className = "b-tech__item col-lg-3 col-md-3 col-sm-12 col-xs-12" >
       < h3 className = "b-tech__title" > В освоении < /h3> < div className = "b-tech__element col-lg-12 col-md-12 col-sm-4 col-xs-6" >
       < div className = "b-tech__icon" > < img src = "images/react.png"
       className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > ReactJS < /div> < /div> < div className = "b-tech__element col-lg-12 col-md-12 col-sm-4 col-xs-6" >
       < div className = "b-tech__icon" > < img src = "images/webgl.png"
       className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > WebGl / Canvas < /div> < /div> < div className = "b-tech__element col-lg-12 col-md-12 col-sm-4 col-xs-6" >
-      < div className = "b-tech__icon" > < img src = "images/js.png"
-      className = "b-tech__pix" / > < /div> < div className = "b-tech__name" > ES6 < /div> < /div> < /div> < /div></div >
+     < /div> < /div> < /div></div >
     );
   }
 });
@@ -119,17 +146,19 @@ var canvasEngine = {
     //    var go = window.requestAnimationFrame(this.render);
     $(this.canvas).on('mousedown', function(event) {
       canvasEngine.mousedown = true;
-
+      canvasEngine.beforex = undefined ;
+      canvasEngine.beforey = undefined;
     })
     $(this.canvas).on('mouseup', function(event) {
-
+      
       canvasEngine.mousedown = false;
 
     })
     $(canvasEngine.canvas).on('mousemove', function(event) {
-
-      canvasEngine.x = event.offsetX
-      canvasEngine.y = event.offsetY
+      canvasEngine.beforex == undefined ? canvasEngine.beforex =  event.offsetX :'' ;
+      canvasEngine.beforey == undefined ? canvasEngine.beforey =  event.offsetY :'';
+      canvasEngine.x = event.offsetX;
+      canvasEngine.y = event.offsetY;
       canvasEngine.pen()
       if (canvasEngine.mousedown == true) {
 
@@ -139,7 +168,10 @@ var canvasEngine = {
   },
   pen: function() {
     var ctx = canvasEngine.penCtx;
+    
     ctx.clearRect(0, 0, $('.b-header__pix').width(), $('.b-header__pix').width())
+    
+    
     ctx.drawImage(canvasEngine.pencil, canvasEngine.x + 5, canvasEngine.y - 25, 30, 25);
 
 
@@ -150,12 +182,17 @@ var canvasEngine = {
 
 
     ctx.beginPath();
+    ctx.lineWidth="5";
     ctx.fillStyle = "#e81017"
+    ctx.strokeStyle = "#e81017"
+    ctx.moveTo(canvasEngine.beforex,canvasEngine.beforey);
+    ctx.lineTo(canvasEngine.x,canvasEngine.y);
+    ctx.stroke(); 
+    canvasEngine.beforex = canvasEngine.x;
+    canvasEngine.beforey = canvasEngine.y;
 
-   
-
-    ctx.arc(canvasEngine.x, canvasEngine.y, 2, 0, Math.PI * 2, true)
-    ctx.fill();
+    //ctx.arc(canvasEngine.x, canvasEngine.y, 2, 0, Math.PI * 2, true)
+    //ctx.fill();
 
   }
 
